@@ -12,9 +12,6 @@ import Tesseract from 'tesseract.js';
 
 
 const PolicyForm = () => {
-  
-  // const CameraCapture = () => {
-
     const webcamRef = useRef(null);
     const [recognizedText, setRecognizedText] = useState('');
     const [formData, setFormData] = useState({
@@ -86,7 +83,7 @@ console.log(imageSrc);
   const dobPattern = /Date of Birth:(\d{2})\s*-\s*(\d{2})-(\d{4})/;
   const addressPattern = /Address:\s*([^]+)$/;
   
-  // Values   
+
   const [email, setEmail] = useState('')
   const [pincode, setPincode] = useState('')
   const [address, setAddress] = useState('')
@@ -97,7 +94,7 @@ console.log(imageSrc);
   const [selectedLanguage, setSelectedLanguage] = useState('english')
 
   
-  // Switch Value
+
   const [genderValue, setGenderClick] = useState('')
   const [nriSwitchValue, setNriSwitchValue] = useState('')  
 
@@ -177,19 +174,8 @@ console.log(imageSrc);
           .then((response) => {
             console.log("Listening...");
             const recognizedText = response.data.recognized_text;
-            // const emailRegex = /^[\w\.-]+@[\w\.-]+\.\w+$/;
-            // const email = recognizedText.replace(/\s+/g, '').toLowerCase();
-            // if (emailRegex.test(email)) {
-            //   console.log(`Valid Email: ${email}`);
-              return recognizedText; // Resolve with the recognized text
-        //     } else {
-        //       console.log('Invalid Email. Please speak again.');
-        //       throw new Error('Invalid Email'); // Throw an error if the email is invalid
-        //     }
-        //   })
-        //   .catch((error) => {
-        //     console.error(error.response.data.detail);
-        //     throw error; // Throw the error object
+              return recognizedText;
+       
           });
       };
     while (index < input.length) {
@@ -200,7 +186,7 @@ console.log(imageSrc);
         console.log("Recognized Text:", answer,document.getElementById(input[index]));
         index++;
       } catch (error) {
-        // Handle the rejected promise (invalid email)
+   
         console.log("Please try again.");
       }
     }
