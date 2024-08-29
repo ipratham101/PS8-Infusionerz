@@ -8,6 +8,7 @@ OCR model that scans documents like aadhar card in front of web cam and automati
 <br />
 AI powered bot that answer your queries of any documents that are needed to read or have any doubts with in filling form
 
+[Bajaj Video]([https://drive.google.com/file/d/abc123/view?usp=sharing](https://drive.google.com/file/d/17pZbOrlmQxGRuzeVFQuocVe5dGZNIhJd/view?usp=sharing))
 
 ![IMG-20231130-WA0006](https://github.com/ipratham101/PS8-Infusionerz/assets/105946829/7d01cff6-d7f1-4305-893f-3a52936bbd3e)
 ![IMG-20231130-WA0004](https://github.com/ipratham101/PS8-Infusionerz/assets/105946829/3a348168-b6ab-4137-97e4-9482478c97d9)
